@@ -1,0 +1,42 @@
+{
+  "district": [
+    {
+      "id": 1,
+      "district": "bogor"
+    },
+    {
+      "id": 2,
+      "district": "bandung"
+    }
+  ],
+  "gender": [
+    {
+      "id": 1,
+      "gender": "man"
+    },
+    {
+      "id": 2,
+      "gender": "woman"
+    }
+  ],
+  "price": [
+    {
+      "id": 1,
+      "range": "Rp. 100.000 - Rp. 150.000"
+    },
+    {
+      "id": 2,
+      "range": "Rp. 150.000 - Rp. 200.000"
+    },
+    {
+      "id": 3,
+      "range": "Rp. 200.000 - Rp. 300.000"
+    }
+  ],
+  "orders": [],
+  "bidPending": [],
+  "bidAccept": [],
+  "transactions": [],
+  "history": [],
+  "recruitment": []
+}

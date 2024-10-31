@@ -1,0 +1,372 @@
+{
+  "info": {
+    "name": "Auth and Orders API",
+    "description": "Collection for Auth API with JWT authentication and Orders API.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8000/auth/login",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["auth", "login"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"abiefathan22@gmail.com\",\n    \"password\": \"abiabi\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8000/auth/register",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["auth", "register"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"email\": \"newuser@example.com\",\n    \"password\": \"newpassword\",\n    \"name\": \"New User\",\n    \"address\": \"123 New Street\",\n    \"age\": \"30\",\n    \"phoneNumber\": \"08123456789\",\n    \"gender\": \"cowok\",\n    \"ktp\": \"123456\",\n    \"kk\": \"789012\",\n    \"role\": \"employe\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Get All Users",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/users",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["users"]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Get User by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/users/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["users", "1"]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Update User by ID",
+      "request": {
+        "method": "PUT",
+        "url": {
+          "raw": "http://localhost:8000/users/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["users", "1"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Updated Name\",\n    \"email\": \"updateduser@example.com\",\n    \"address\": \"456 Updated Street\",\n    \"age\": \"22\",\n    \"phoneNumber\": \"08123456789\",\n    \"nik\": \"87654321\",\n    \"gender\": \"cowok\",\n    \"ktp\": \"654321\",\n    \"kk\": \"123456\",\n    \"role\": \"admin\"\n}"
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Delete User by ID",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8000/users/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["users", "1"]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Get All Orders",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/orders",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["orders"]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Get Order by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/orders/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["orders", "1"]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Create Order",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:8000/orders",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["orders"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Jane Doe\",\n    \"address\": \"jl baru\",\n    \"service\": \"Back Massage\",\n    \"status\": \"pending\"\n}"
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Update Order by ID",
+      "request": {
+        "method": "PUT",
+        "url": {
+          "raw": "http://localhost:8000/orders/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["orders", "1"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Jane Doe\",\n    \"address\": \"jl baru\",\n    \"service\": \"Back Massage\",\n    \"status\": \"completed\"\n}"
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Delete Order by ID",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8000/orders/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["orders", "1"]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Get Status",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/status",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["status"]
+        }
+      }
+    },
+    {
+      "name": "Update Status",
+      "request": {
+        "method": "PUT",
+        "url": {
+          "raw": "http://localhost:8000/status",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["status"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"status_id\": 1,\n    \"status_name\": \"Completed\"\n}"
+        }
+      }
+    },
+    {
+      "name": "Delete Status",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8000/status",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["status"]
+        }
+      }
+    },
+    {
+      "name": "Get All Recruitment",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/recruitment",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["recruitment"]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Get Recruitment by ID",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:8000/recruitment/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["recruitment", "1"]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Update Recruitment by ID",
+      "request": {
+        "method": "PUT",
+        "url": {
+          "raw": "http://localhost:8000/recruitment/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["recruitment", "1"]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"name\": \"Updated Recruit\",\n    \"email\": \"updatedrecruit@gmail.com\",\n    \"address\": \"jl terbaru\",\n    \"age\": \"35\",\n    \"phoneNumber\": \"08123456789\",\n    \"nik\": \"87654321\",\n    \"gender\": \"cowok\",\n    \"ktp\": \"654321\",\n    \"kk\": \"123456\"\n}"
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Delete Recruitment by ID",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:8000/recruitment/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["recruitment", "1"]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}",
+            "type": "text"
+          }
+        ]
+      }
+    }
+  ]
+}

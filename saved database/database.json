@@ -1,0 +1,58 @@
+{
+  "price": [
+    {
+      "id": 1,
+      "range": "Rp . 100.000 - Rp. 150.000"
+    },
+    {
+      "id": 2,
+      "range": "Rp. 150.000 - Rp. 200.000"
+    },
+    {
+      "id": 3,
+      "range": "Rp. 200.000 - Rp. 300.000"
+    }
+  ],
+  "orders": [],
+  "bidPending": [],
+  "bidAccept": [],
+  "status": [
+    {
+      "status_id": 1,
+      "status_name": "Processing"
+    }
+  ],
+  "transactions": [],
+  "history": [
+    {
+      "PhoneNumber_customer": "085710996038",
+      "addressCustomer": "desaCijujung rt05 rw04 kec.sukaraja kab.bogor",
+      "dealBudget": "56",
+      "districtCustomer": "bogor",
+      "emailCustomer": "abiefathan22@gmail.com",
+      "emailEmploye": "lalaland@gmail.com",
+      "employeInfo": {
+        "address": "jalan buntu 2",
+        "age": "42",
+        "district": "bogor",
+        "email": "lalaland@gmail.com",
+        "gender": "man",
+        "name": "lalaland",
+        "phoneNumber": "321321321312321"
+      },
+      "id": 1
+    }
+  ],
+  "recruitment": [
+    {
+      "name": "sads",
+      "email": "yazid@gmail.com",
+      "address": "jalan yazid",
+      "age": "25",
+      "phoneNumber": "0895959595",
+      "nik": "2323",
+      "gender": "21",
+      "id": 5
+    }
+  ]
+}

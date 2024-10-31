@@ -1,0 +1,74 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Abi",
+      "email": "Abi@gmail.com",
+      "password": "password",
+      "address": "none",
+      "age": "21",
+      "district": "Bandung",
+      "phoneNumber": "none",
+      "gender": "man",
+      "ktp": "none",
+      "kk": "none",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Encik",
+      "email": "encik@gmail.com",
+      "password": "password",
+      "address": "none",
+      "age": "21",
+      "district": "Bandung",
+      "phoneNumber": "none",
+      "gender": "man",
+      "ktp": "none",
+      "kk": "none",
+      "role": "admin"
+    },
+    {
+      "id": 3,
+      "email": "employe1@gmail.com",
+      "password": "password",
+      "name": "employe 1",
+      "address": "jln. bogor no 12",
+      "district": "bandung",
+      "age": "41",
+      "phoneNumber": "0832-3231-3213",
+      "gender": "man",
+      "ktp": "222222222222",
+      "kk": "222222222222",
+      "role": "employe"
+    },
+    {
+      "id": 4,
+      "email": "employe2@gmail.com",
+      "password": "password",
+      "name": "employe 2",
+      "address": "jln. bogor no 12",
+      "district": "bogor",
+      "age": "28",
+      "phoneNumber": "0844-1131-3203",
+      "gender": "man",
+      "ktp": "222222222222",
+      "kk": "222222222222",
+      "role": "employe"
+    },
+    {
+      "id": 5,
+      "email": "employe3@gmail.com",
+      "password": "password",
+      "name": "employe 3",
+      "address": "jln. bogor no 12",
+      "district": "bogor",
+      "age": "30",
+      "phoneNumber": "0899-9008-3223",
+      "gender": "man",
+      "ktp": "2222222222",
+      "kk": "222222222222",
+      "role": "employe"
+    }
+  ]
+}
